@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function delayFunction()
+        {
+            document.write('<h3>Welcome to JS setTimeOut');
+        }
+        //async
+        setTimeout(function()
+         {
+            myFunction("Friends for ever")
+         },3000);
+         function myFunction(value){
+            document.getElementById("demo").innerHTML=value;
+         }
+         //Arrow function
+         /*delayFunction=()=>document.write("Welcome to JS setTimeOut");
+         setTimeout(myFunction=()=>document.write("Friends for ever </br>"),3000);*/
+
+    </script>
+    <h3>Example of delay of execution</h3>
+    <button onclick="setTimeout(delayFunction,4000)">Click here</button>
+    <p>Wait 3 seconds for this page to change</p>
+    <h1 id="demo"></h1>
+</body>
+</html>

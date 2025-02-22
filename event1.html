@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <script>
+        function changeText(id){
+            id.innerHTML="Changes only when click is released";
+        }
+    </script>
+    <h1 id="h">This is a heading</h1>
+    <input type="button" value="submit" onclick="document.getElementById('h').style.color='red'">
+    <h1 onmouseup="changeText(this)">Mouse up</h1>
+
+    <h1 id="h1"  onmousedown="document.getElementById('h1').style.color='red'">Mouse down changes when clicked </h1>
+    
+    <h1 id="h2" onmouseover="document.getElementById('h2').style.color='green'">The onmouseover event triggers when the mouse pointer enters an element or any one of its child elements.</h1>
+    <h1 id="h3" onmouseout="document.getElementById('h3').style.color='blue'">The mouseout event triggers when the mouse pointer leaves any child elements as well the selected element</h1>
+    <h1 id="h4" onmousemove="document.getElementById('h4').style.color='orange'">Mouse move over an element triggers event</h1>
+    <h1 id="h5" ondblclick="document.getElementById('h5').style.color='violet'">Double click to see change</h1>
+    <h1 id="h6" oncontextmenu="document.getElementById('h6').style.color='brown'">Context menu changes only when we right click</h1>
+    <h1 id="h7" onmouseenter="document.getElementById('h7').style.color='darkgreen'"> The onmouseenter event is triggered only when the mouse pointer hits the element.</h1>
+    <h1 id="h8" onmouseleave="document.getElementById('h8').style.color='darkblue'">The mouseleave event is only triggered when the mouse pointer leaves the selected element.</h1>
+     
+</body>
+</html>

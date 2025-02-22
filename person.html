@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person {
+            constructor(name, age, country) {
+                this.name = name;
+                this.age = age;
+                this.country = country;
+            }
+
+            display() {
+                document.write("Name is: " + this.name + "<br>");
+                document.write("Age is: " + this.age + "<br>");
+                document.write("Country is: " + this.country + "<br>");
+            }
+        }
+
+        let p = new Person("John", 22, "India");
+        p.display();
+    </script>
+</body>
+</html>

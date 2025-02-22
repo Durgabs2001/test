@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Count of vowels</title>
+    </head>
+    <body>
+        <script>
+         function vowels(n)
+         {
+         
+          count=0;
+          for(i=0;i<n.length;i++)
+          {
+            if(n[i]=='a'||n[i]=='e'||n[i]=='i'||n[i]=='o'||n[i]=='u'||n[i]=='A'||n[i]=='E'||n[i]=='I'||n[i]=='O'||n[i]=='U')
+          {
+            count+=1;
+          }
+          }
+          document.write(count);
+         }
+         x=prompt("Enter string");
+         vowels(x);
+          
+        </script>
+    </body>
+</html>

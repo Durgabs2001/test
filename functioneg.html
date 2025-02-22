@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+         function getcube(number)
+         {
+            alert(number*number*number);
+         }
+         getcube(6);
+         //If a parameter is not provided, then its value becomes undefined.//
+         function showMessage(from,text="no text"){
+            alert(from + " : " + text);
+         }
+         showMessage("Ann");
+
+         //Function with Return Value//
+         function getinfo()
+         {
+            return "hello john.How are you";
+            
+         }
+            let x=getinfo();
+            console.log(x);
+
+        //local variable
+        function showMessages()
+        {
+            let mess="Hello";
+            alert(mess);
+        }
+        showMessages();
+       // alert(mess);
+        //will not print as mess is local variable//
+
+        //global variable//
+        let username="Durga"
+        function showM(){
+            let message='Hello' + username;
+            alert(message);
+            alert(username);
+        }
+        showM();
+        console.log(username);
+
+        alert(1/0);//prints infinity
+        alert(Infinity);//prints infinity
+        alert("not a number"/2);//prints NaN
+        </script>
+    </body>
+</html>

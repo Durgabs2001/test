@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function add()
+        {
+            let a=document.getElementById("num1").value;
+            let b=document.getElementById("num2").value;
+            a=Number(a);
+            b=Number(b);
+            let add=a+b;
+            document.getElementById("mylocation").innerHTML=add;
+        }
+        function subtract()
+        {
+            let a=document.getElementById("num1").value;
+            let b=document.getElementById("num2").value;
+            a=Number(a);
+            b=Number(b);
+            let s=a-b;
+            document.getElementById("mylocation").innerHTML=s;
+        }
+        function multiply()
+        {  
+            let a=document.getElementById("num1").value;
+            let b=document.getElementById("num2").value;
+            a=Number(a);
+            b=Number(b);
+            let m=a*b;
+            document.getElementById("mylocation").innerHTML=m;
+        }
+        function divide()
+        {
+            let a=document.getElementById("num1").value;
+            let b=document.getElementById("num2").value;
+            a=Number(a);
+            b=Number(b);
+            let x=a/b;
+            document.getElementById("mylocation").innerHTML="Answer is "+x;
+        }
+
+    </script>
+    <label>Enter first number </label>
+    <input type="text" id="num1">
+    <label>Enter second number</label>
+    <input type="text" id="num2"><br><br>
+    <input type="button" value="Add" onclick="add()">
+    <input type="button" value="Subtract" onclick="subtract()">
+    <input type="button" value="Multiply" onclick="multiply()">
+    <input type="button" value="Divide" onclick="divide()">
+    <div id="mylocation"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            padding-right:10px;
+            text-align: left;
+        }
+       
+    </style>
+</head>
+<body><br>
+    <center>
+        <div style="border:2px solid;height:250px;width:400px;background-color:azure;"><br>
+            <h1 style="margin-left:70px;">Login Page</h1>
+            <form style="margin-left:50px;" name="myForm">
+                <label for="email">Enter Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter email" style="margin-left:15px;"><br><br>
+                <label for="password">Enter password</label>
+                <input type="password" id="pass" name="pass" placeholder="Enter password"><br><br>
+                <input type="submit" value="Login" style="margin-left:70px;" onclick="return validate()">
+            </form><br>
+        </div>
+    </center>
+    
+    <script>
+        //let email=prompt("Enter email");
+        //let password=prompt("Enter password");
+        let email="durgabs157@gmail.com";
+        let password="durgabs";
+        
+        function validate()
+        {
+            let em=document.getElementById("email").value;
+            let pa=document.getElementById("pass").value;
+            if(email!=em)
+            {
+                alert("Invalid email");
+                return false;
+            }
+            if(password==pa)
+            {
+                alert("Logged in successfully");
+                return false;
+            }
+            else
+            {
+                alert("Incorrect password");
+                return false;
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

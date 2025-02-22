@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function count(str,c)
+        {
+            let count=0;
+            for(let i=0;i<str.length;i++)
+            {
+                if(str[i]==c)
+                {
+                    count+=1;
+                }
+            }
+            alert("The count of "+c+ " in "+str+ " is "+count);
+        }
+        s=prompt("Enter string");
+        ch=prompt("Enter the character");
+        count(s,ch);
+    </script>
+</body>
+</html>

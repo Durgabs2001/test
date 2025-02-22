@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*let arr=[];
+        let n=prompt("Enter no of elements in array");
+        count=0;
+        for(i=0;i<n;i++)
+        {
+            a=prompt("Enter no");
+            if(arr.indexOf(a)==-1)
+            {
+                arr.push(a);
+            }
+           
+        }
+        console.log(arr);*/
+        function uniqueArray(arr)
+        {
+            let a=[];
+            for(let i of arr)
+            {
+                if(a.indexOf(i)==-1)
+                {
+                    a.push(i);
+                }
+            }
+            console.log(a)
+        }
+        let array=[];
+        let n=prompt("Enter no of elements in array");
+        for(i=0;i<n;i++)
+        {
+            ar=prompt("Enter no at "+i);
+            array.push(ar);
+           
+        }
+        console.log(array);
+        uniqueArray(array);
+    </script>
+</body>
+</html>

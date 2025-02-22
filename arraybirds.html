@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+         let arr1=["Parrot","Crow","Eagle","Emu","Ostrich",];
+         x=arr1.indexOf("Eagle");
+         console.log(x);
+         arr1.splice(x,1);//from index x remove one item.if splice(x,2)->from index x remove 2 item.
+         document.write(arr1)
+         
+         let ebirds=[];
+         for (let i=0;i<arr1.length;i++)
+         {
+            if(arr1[i].startsWith("E"))
+             {
+                ebirds.push(arr1[i]);
+                
+             }
+           
+         }
+         document.write("</br>");
+         document.write(ebirds);
+        </script>
+    </body>
+</html>

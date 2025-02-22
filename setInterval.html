@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function waitAndShow()
+        {
+            var systemdate=new Date();
+            document.getElementById("clock").innerHTML=systemdate.toLocaleTimeString();
+            //The toLocaleTimeString() method returns the time portion of a date object as a string, using locale conventions.
+        }
+        setInterval(waitAndShow,4000);
+        //async
+        setInterval(myFunction, 1000);
+        function myFunction()
+        {
+        let d = new Date();
+        document.getElementById("demo").innerHTML=
+        d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+        }
+        //Arrow functions
+        /*waitAndShow=()=>{
+            var systemdate=new Date();
+            document.getElementById("clock").innerHTML=systemdate.toLocaleTimeString();
+        }
+        setInterval(waitAndShow,4000);
+        myFunction=()=>{
+            let d = new Date();
+            document.getElementById("demo").innerHTML=
+            d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+        }
+        setInterval(myFunction,1000);*/
+    </script>
+    <h3>Updated time will show in every 4 seconds</h3>
+    <h3>The current time on your computer is<br><span id="clock"></span></h3>
+    <p>Display time every second </p>
+    <h1 id="demo"></h1>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function bmi()
+    {
+        let h=document.getElementById("num1").value;
+        let w=document.getElementById("num2").value;
+        let bmi = w / (h * h);
+        document.getElementById("location").innerHTML = "Your BMI is " + bmi;
+
+        if(bmi<18.5)
+         {
+            document.getElementById("mylocation").innerHTML = "You are underweight";
+         }
+         else if(bmi<=24.9)
+         {
+            document.getElementById("mylocation").innerHTML = "You are healthy";
+         }
+         else if(bmi<=29.9)
+         {
+            document.getElementById("mylocation").innerHTML = "You are overweight";
+         }
+         else if(bmi<=39.9)
+         {
+            document.getElementById("mylocation").innerHTML = "You are obese";
+         }
+         else
+         {
+            document.getElementById("mylocation").innerHTML = "You are severly obese";
+         }
+        
+        
+    }
+    </script>
+     <label>Enter height in m</label>
+     <input type="text" id="num1">
+     <label>Enter weight in kg</label>
+     <input type="text" id="num2"><br><br>
+     <input type="button" value="Calculate" onclick="bmi()">
+     <br>
+     <div id="location"></div><br>
+     <div id="mylocation"></div>
+</body>
+</html>

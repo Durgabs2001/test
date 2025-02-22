@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+         let a=["Apple","Orange","Mango"];
+         for(let i=0;i<a.length;i++)
+         {
+            document.write( a[i]);
+         }
+         document.write("</br>" )
+         for(key in a)
+         {
+            document.write(a[key]);
+         }
+         document.write("</br>" )
+         //indexOf
+         document.write(a.indexOf("Orange"));
+         document.write("</br>" )
+         //pop
+         a.pop();
+         document.write(a);
+    
+         document.write("</br>" )
+         //push
+         a.push("Plum");
+         document.write( a);
+         document.write("</br>" );
+         //reverse
+         a.reverse();
+         document.write( a);
+         document.write("</br>" );
+         let b=["Carrot","Tomato","Cucumber"];
+         //concat
+         let x=a.concat(b);
+         document.write(x);
+         document.write("</br>" );
+         //slice
+         y=x.slice(0,4);
+         document.write(y);
+         //sort
+         a.sort();
+         document.write("</br>" );
+         document.write(a);
+         
+        
+      
+          
+        </script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Shape{
+            constructor() 
+            { 
+              
+            }
+            area()
+            {
+                document.write("area");
+            }
+    }
+   
+
+    class Circle extends Shape{
+        constructor(r)
+        {
+            super();
+            this.r=r;
+        }
+        area()
+            {
+                let area=3.14*this.r*this.r;
+                document.write("Circle area: " + area + "<br>");
+            }
+        
+    }
+    class Triangle extends Shape
+        {
+            constructor(b,he)
+            {
+                super();
+                this.b=b;
+                this.he=he;
+            }
+            area()
+            {
+                let ar=0.5*this.b*this.he;
+                document.write("Triangle area: " + ar + "<br>");
+            }
+        }
+        let cir=new Circle(5);
+        cir.area();
+
+        let tri=new Triangle(10,8);
+        tri.area();
+
+    </script>
+</body>
+</html>

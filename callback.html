@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Callback</h1>
+    <script>
+        function getData(x,y,callback)
+        {
+            document.write("The multiplication of two numbers "+ x +" and "+ y +" is " + x*y+"<br><br>");
+            callback();
+
+        }
+        function showData()
+        {
+            document.write("This showData() method executes after completion of getData() method");
+        }
+        getData(20,30,showData);
+        //Arrow function
+        /*getData=(x,y,callback)=>{
+            document.write("The multiplication of two numbers "+ x +" and "+ y +" is " + x*y+"<br><br>");
+            callback();
+        }
+        showData=()=> document.write("This showData() method executes after completion of getData() method");
+        getData(2,3,showData);*/
+    </script>
+</body>
+</html>

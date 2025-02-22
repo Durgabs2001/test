@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <script>
+        function bulbOn(){
+            var data=`<img src="images/bulbon.png" height="500" width="500" id="on">`;
+            document.getElementById('mylocation').innerHTML= data;
+        }
+       
+    </script>
+    <div id="mylocation"><img src="images/bulb.png" height="350" width="350" id="off"></div>
+    <input type="button" value="OFF" id="b1" onclick="document.getElementById('mylocation').style.display='block',document.getElementById('on').style.display='none'">
+    <input type="button" value="ON" id="b2" onclick="document.getElementById('off').style.display='none',bulbOn()">
+   
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*let n=prompt("Enter string");
+        let s=prompt("Enter a letter you want to check")
+        for(i=0;i<n.length;i++)
+        {
+            if(n[i]==s)
+            {
+                console.log(s+" is present");
+               
+            }
+            else{
+                console.log(s+" is not present");
+                
+            }
+            
+        }*/
+       n=prompt("Enter string");
+       
+       for(i=0;i<n.length;i++)
+       {
+        count=1;
+        for(j=i+1;j<n.length;j++)
+        {
+            if(n[i]==n[j])
+            {
+                count++;
+               
+            }
+        }
+        console.log(n[i] +" has count" +count);
+       }
+        
+    </script>
+</body>
+</html>

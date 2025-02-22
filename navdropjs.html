@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           li{
+            display:inline;
+            padding:10px;
+           }
+           nav{
+            width:800px;
+            float:right;
+           }
+           .active{
+            color:white;
+            font-style:bold;
+            text-decoration-line: underline;
+           }
+           p{
+            float:left;
+            padding-left: 100px;
+           }
+           .a{
+            position: absolute;
+            right:500px;
+           }
+        </style>
+    </head>
+    <body style="background-color:coral;">
+        <script>
+             function drop()
+         {
+            var data=`<li class="nav-item dropdown" style="list-style-type:none;float:right;margin-right:330px;" class="a" >
+           <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="list-style-type:none;display:block;">
+          <li><a class="dropdown-item" href="#" style="text-decoration: none;display:block;color:white;">Html</a></li>
+          <li><a class="dropdown-item" href="#" style="text-decoration: none;display:block;color:white;">CSS</a></li>
+          <li><a class="dropdown-item" href="#" style="text-decoration: none;display:block;color:white;">Javascript</a></li>
+          <li ><a class="dropdown-item" href="#" style="text-decoration: none;display:block;color:white;">React</a></li>
+        </ul>
+      </li>`;
+      document.getElementById('mylocation').innerHTML=data;
+         }
+        </script>
+        <p style="color:white;padding-left: 20px;">BRAND</p>
+        <nav>
+            <ul>
+                <li><a href="#" style="text-decoration: none;color:white">Project</a></li>
+                <li><a href="#" style="text-decoration: none;color:white">About</a></li>
+                <li><a href="#" style="text-decoration: none;color:white">Services</a></li>
+                <li><a href="#" style="text-decoration: none;color:white">Blog</a></li>
+                <li><a href="#" style="text-decoration: none;color:white">Contact</a></li>
+                <b><li style="display:inline;position: relative;"><a href="#"class="active">Home</a><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="white" class="bi bi-caret-down-fill" viewBox="0 0 16 16" onclick="drop()">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></li><div id="mylocation"></div></b>
+            </ul>
+        </nav>
+    </body>
+</html>
